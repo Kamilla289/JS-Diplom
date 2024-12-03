@@ -547,17 +547,6 @@ a.absolute {
 	-moz-animation: sonarEffect 1.3s ease-out 75ms;
 	animation: sonarEffect 1.3s ease-out 75ms;
 }
-.img-wrapper-btn {
-	display: block;
-	position: absolute;
-	width: 200px;
-	height: 48px;
-	top: 41%;
-	left: 50%;
-	margin-left: -100px;
-	z-index: 15;
-	cursor: pointer;
-}
 @-webkit-keyframes sonarEffect {
 	0% {
 		opacity: 0.3;
@@ -854,21 +843,33 @@ hr.white {
 	}
 }
 
-/* top slider */
-.top-slider .slick-dots {
-	position: absolute;
-	bottom: 25px;
-}
-.top-slider .slick-dots li {
-	border-color: #fff !important;
-}
-.top-slider .slick-dots li.slick-active {
-	background-color: #fff !important;
-}
 .top-slider {
 	overflow: hidden;
 	height: 450px;
 	position: relative;
+  }
+  
+  .top-slider .slick-dots {
+	position: absolute;
+	bottom: 25px;
+	left: 50%;
+	transform: translateX(-50%);
+	z-index: 30; /* Увеличим z-index для точек */
+  }
+  
+  .top-slider .slick-dots li {
+	border-color: #fff !important;
+	width: 12px;
+	height: 12px;
+	background-color: transparent;
+	border-radius: 50%;
+	cursor: pointer;
+	z-index: 30; /* Увеличим z-index для точек */
+  }
+  
+  .top-slider .slick-dots li.slick-active {
+	background-color: #fff !important;
+	z-index: 30;
   }
   
   .top-slider .item {
@@ -877,15 +878,25 @@ hr.white {
 	height: 100%;
 	opacity: 0;
 	transition: opacity 1s ease-in-out;
+	background-size: cover;
+	background-position: 50% 50%;
+	z-index: 10; /* Убедитесь, что фон имеет меньший z-index */
   }
+  
   .top-slider .item.active {
 	opacity: 1;
+	z-index: 20; /* Увеличиваем z-index для активного слайда */
   }
+  
   .top-slider .table {
-	position: relative;
-	z-index: 10;
+	position: absolute;
+	bottom: 20px;
+	left: 20px;
+	color: white;
+	z-index: 40; /* Убедимся, что текст находится поверх всех элементов */
   }
-.top-slider .item:before {
+  
+  .top-slider .item:before {
 	content: "";
 	display: block;
 	position: absolute;
@@ -893,12 +904,23 @@ hr.white {
 	height: 100%;
 	top: 0;
 	left: 0;
-	background: rgba(0, 0, 0, 0.5);
-}
-.top-slider .table {
-	position: relative;
-	z-index: 10;
-}
+	background: rgba(0, 0, 0, 0.5); /* Фон для улучшения контраста текста */
+	z-index: 15; /* Задний план с полупрозрачным фоном */
+  }
+  
+  .top-slider .table h1,
+  .top-slider .table .title-h1 {
+	margin: 0;
+	font-size: 36px;
+	font-weight: bold;
+	z-index: 40;
+  }
+  
+  .top-slider .table .text {
+	font-size: 18px;
+	margin-top: 10px;
+	z-index: 40;
+  }
 .video-block {
 	height: 100%;
 }
@@ -952,7 +974,7 @@ video#video_background {
 	}
 }
 
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 2400px) {
 	.top-slider .item {
 		height: 520px;
 	}
@@ -1083,6 +1105,17 @@ video#video_background {
 	padding: 0 30px;
 	position: relative;
 	z-index: 4;
+}
+.img-wrapper-btn {
+	display: block;
+	position: absolute;
+	width: 200px;
+	height: 48px;
+	top: 41%;
+	left: 50%;
+	margin-left: -100px;
+	z-index: 15;
+	cursor: pointer;
 }
 .steps-section .text {
 	font-size: 14px;
