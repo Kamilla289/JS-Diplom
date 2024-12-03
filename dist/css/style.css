@@ -516,6 +516,17 @@ a.absolute {
 	transition: transform ease-out 0.1s, background 0.5s;
 	margin-bottom: 20px;
 }
+.img-wrapper-btn {
+	display: block;
+	position: absolute;
+	width: 200px;
+	height: 48px;
+	top: 41%;
+	left: 50%;
+	margin-left: -100px;
+	z-index: 15;
+	cursor: pointer;
+}
 .icons .element .img-wrapper:hover {
 	background: #e9bb26 !important;
 }
