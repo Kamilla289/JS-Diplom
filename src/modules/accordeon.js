@@ -1,5 +1,4 @@
 const accordeon = () => {
-  document.addEventListener('DOMContentLoaded', () => {
 		const accordeon = document.querySelector('.accordeon'); 
 		const elements = accordeon.querySelectorAll('.element'); 
 
@@ -22,7 +21,6 @@ const accordeon = () => {
 			}
 			});
 		});
-	});
 }
 
 export default accordeon
