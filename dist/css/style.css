@@ -1140,7 +1140,40 @@ video#video_background {
 .services-arrow {
 	display: flex;
 	justify-content: center;
+
 }
+
+.swiper {
+  height: 486px;
+	overflow-y: visible !important;
+	overflow-x: hidden !important;
+}
+
+.a-left, .a-right {
+	display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  width: 30px !important;
+  cursor: pointer !important;
+  position: absolute !important;
+  top: 94% !important;
+	
+}
+
+.a-left {
+	margin-left: 45%;
+	transform: rotate(180deg);
+}
+
+.a-right {
+	margin-right: 45%;
+}
+
+.arrow-wrapper {
+	display: flex !important;
+	justify-content: space-evenly !important;
+}
+
 
 .arrow-right,
 .arrow-left {
