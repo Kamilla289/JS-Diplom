@@ -3,7 +3,7 @@ import accordeon from './modules/accordeon'
 import arrowUp from './modules/arrowUp'
 import topMenu from './modules/topMenu'
 import slider from './modules/slider'
-import validation from './modules/validation'
+import sendForm from './modules/sendForm'
 
 
 modal()
@@ -11,4 +11,4 @@ accordeon()
 arrowUp()
 topMenu()
 slider()
-validation()
+sendForm()
