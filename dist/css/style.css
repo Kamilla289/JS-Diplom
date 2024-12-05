@@ -1,3 +1,5 @@
+
+
 @import url(animate.css);
 @import url(bootstrap.css);
 @import url(font-awesome.css);
@@ -1138,53 +1140,26 @@ video#video_background {
 /**** services section *****/
 
 .services-arrow {
-	display: flex;
-	justify-content: center;
-
-}
-
-.swiper {
-  height: 486px;
-	overflow-y: visible !important;
-	overflow-x: hidden !important;
-}
-
-.a-left, .a-right {
 	display: flex !important;
-  align-items: center !important;
-  justify-content: center !important;
-  width: 30px !important;
-  cursor: pointer !important;
-  position: absolute !important;
-  top: 94% !important;
-	
+	justify-content: center !important;
+	top: 200px;
 }
-
-.a-left {
-	margin-left: 45%;
-	transform: rotate(180deg);
-}
-
-.a-right {
-	margin-right: 45%;
-}
-
-.arrow-wrapper {
-	display: flex !important;
-	justify-content: space-evenly !important;
+.swiper-button-next, .swiper-button-prev {
+	position: sticky;
+	margin-top: calc(0px -(var(--swiper-navigation-size) / 10));
 }
 
 
 .arrow-right,
 .arrow-left {
-	width: 30px;
-	height: 30px;
+	width: 30px !important;
+	height: 30px !important;
 	cursor: pointer;
 }
 
 .arrow-left {
 	transform: rotate(180deg);
-	margin-right: 20px;
+	margin-right: 20px !important;
 }
 
 .arrow-right {
@@ -1338,6 +1313,24 @@ video#video_background {
 	}
 	.services-elements > .row > hr:nth-of-type(3n) {
 		clear: both;
+	}
+}
+
+@media (max-width: 1239px) {
+	.services-elements .text {
+	font-size: 11px;
+}
+}
+
+@media (max-width: 799px) {
+	.col-sm-6 {
+		width: 100%;
+	}
+}
+
+@media (max-width: 639px) {
+	.row {
+		margin-left: 0;
 	}
 }
 /**** /. services section *****/

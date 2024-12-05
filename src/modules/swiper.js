@@ -12,17 +12,21 @@ const carousel = () => {
       prevEl: '.swiper-button-prev',
     },
     breakpoints: {
-      640: {
+      375: {
         slidesPerView: 1,
-        spaceBetween: 20,
+        spaceBetween: 0,
       },
-      768: {
+      640: {
         slidesPerView: 2,
-        spaceBetween: 40,
+        spaceBetween: 10,
       },
-      1024: {
+      800: {
+        slidesPerView: 2,
+        spaceBetween: 10,
+      },
+      1240: {
         slidesPerView: 3,
-        spaceBetween: 50,
+        spaceBetween: 10,
       },
     },
   });

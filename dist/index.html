@@ -20,9 +20,8 @@
 		rel='stylesheet' type='text/css'>
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	<!-- STYLESHEETS :: TEMPLATE -->
-	<link href="css/style.css" rel="stylesheet">
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-	<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+	<link href="css/style.css" rel="stylesheet">
 	<script src="./js/main.js" defer></script>
 </head>
 
@@ -150,7 +149,7 @@
 		<!-- * * * * * * Services section * * * * * * -->
 		<section class="services-section gray-bg" id="services">
 			<div class="push100"></div>
-			<div class="container container-custom">
+			<div class="container">
 				<div class="title-h2 upper text-center">Наши услуги</div>
 				<hr class="hr-min" />
 				<p class="f14 text-center">
@@ -159,9 +158,9 @@
 				<div class="push40"></div>
 
 
-				<div class="services-elements swiper">
-					<div class="row services-carousel swiper-wrapper">
-						<div class="col-sm-6 col-md-4 swiper-slide">
+				<div class="swiper services-elements ">
+					<div class="swiper-wrapper row services-carousel ">
+						<div class="swiper-slide col-sm-6 col-md-4">
 							<div class="element relative">
 								<a class="absolute fancyboxModal" href="#application" data-application="Аварийный выезд"></a>
 								<div class="img-wrapper">
@@ -178,7 +177,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="col-sm-6 col-md-4 swiper-slide">
+						<div class="swiper-slide col-sm-6 col-md-4">
 							<div class="element relative">
 								<a class="absolute fancyboxModal" href="#application"
 									data-application="Монтаж или замена электропроводки"></a>
@@ -196,7 +195,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="col-sm-6 col-md-4 swiper-slide">
+						<div class="swiper-slide col-sm-6 col-md-4">
 							<div class="element relative">
 								<a class="absolute fancyboxModal" href="#application"
 									data-application="Ремонт, замена, перенос розеток"></a>
@@ -214,7 +213,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="col-sm-6 col-md-4 swiper-slide">
+						<div class="swiper-slide col-sm-6 col-md-4">
 							<div class="element relative">
 								<a class="absolute fancyboxModal" href="#application" data-application="Замена электросчетчика"></a>
 								<div class="img-wrapper">
@@ -231,7 +230,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="col-sm-6 col-md-4 swiper-slide">
+						<div class="swiper-slide col-sm-6 col-md-4">
 							<div class="element relative">
 								<a class="absolute fancyboxModal" href="#application" data-application="Установка, замена люстры"></a>
 								<div class="img-wrapper">
@@ -248,7 +247,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="col-sm-6 col-md-4 swiper-slide">
+						<div class="swiper-slide col-sm-6 col-md-4">
 							<div class="element relative">
 								<a class="absolute fancyboxModal" href="#application" data-application="Установка светильников"></a>
 								<div class="img-wrapper">
@@ -266,13 +265,14 @@
 							</div>
 						</div>
 					</div>
-					<div class="wrapper-arrow arrow-wrapper">
-						<div class="services-arrow arrow-wrapper">
-							<img class="a-left swiper-button-prev" src="images/right-arrow_1.svg" alt="arrow-left">
-							<img class="a-right swiper-button-next" src="images/right-arrow_1.svg" alt="arrow-right">
-						</div>
+					<div class="services-arrow">
+						<img class="swiper-button-prev arrow-left" src="images/right-arrow_1.svg" alt="arrow-left">
+						<img class="swiper-button-next arrow-right" src="images/right-arrow_1.svg" alt="arrow-right">
 					</div>
+
 				</div>
+
+
 
 			</div>
 			<div class="push70"></div>
