@@ -1,5 +1,5 @@
 const slider = () => {
-	document.addEventListener("DOMContentLoaded", function () {
+	document.addEventListener("DOMContentLoaded", () => {
 		const slides = document.querySelectorAll(".top-slider .item");
 		const dotsContainer = document.createElement("ul");
 		let currentSlideIndex = 0;
@@ -14,7 +14,7 @@ const slider = () => {
 
 		document.querySelector(".top-slider").appendChild(dotsContainer);
 
-		function changeSlide(index) {
+		const changeSlide = (index) => {
 			slides.forEach((slide) => {
 			slide.classList.remove("active");
 			});

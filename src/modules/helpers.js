@@ -1,6 +1,6 @@
  const animate = ({timing, draw, duration}) => {
 
-  let start = performance.now();
+  const start = performance.now();
 
   requestAnimationFrame(function animate(time) {
 
@@ -8,7 +8,7 @@
     if (timeFraction > 1) timeFraction = 1;
 
 
-    let progress = timing(timeFraction);
+    const progress = timing(timeFraction);
 
     draw(progress);
 

@@ -9,7 +9,7 @@ const sendForm = () => {
           form.appendChild(statusMessage);
       }
   };
-  form.addEventListener('submit', function (e) {
+  form.addEventListener('submit', (e) => {
       e.preventDefault();
       const nameValue = form['fio'].value.trim();
       const phoneValue = form['tel'].value.trim();

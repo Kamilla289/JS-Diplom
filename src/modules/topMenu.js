@@ -7,9 +7,9 @@ const topMenu = () => {
       const targetId = link.getAttribute('href');
       const targetElement = document.querySelector(targetId);
 
-      targetElement.scrollIntoView({
-      behavior: 'smooth',
-      block: 'start'
+      targetElement.scrollIntoView ({
+        behavior: 'smooth',
+        block: 'start'
       });
     });
   });
